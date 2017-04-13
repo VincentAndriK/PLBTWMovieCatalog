@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtUsername"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:color/darker_gray"
+        android:id="@+id/btnTopMovies"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="@android:color/holo_green_dark"
+        app:allow_random_color="false"
+        app:siShape="@raw/star"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Top Movie"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/btnTopMovies"
+        android:layout_centerHorizontal="true" />
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:src="@android:color/darker_gray"
+        android:id="@+id/btnAbout"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="@android:color/holo_orange_light"
+        app:allow_random_color="false"
+        app:siShape="@raw/smile"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="About"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/btnAbout"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
